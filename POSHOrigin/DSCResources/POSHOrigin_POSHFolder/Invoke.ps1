@@ -38,7 +38,7 @@ switch ($type) {
                     [psobject]$ResourceOptions
                 )
 
-                Import-DscResource -Name POSHFolder -ModuleName POSHOrigin -ModuleVersion 1.8.0
+                Import-DscResource -Name POSHFolder -ModuleName POSHOrigin -ModuleVersion 1.8.1
 
                 POSHFolder $ResourceOptions.Name {
                     Ensure = $ResourceOptions.options.Ensure
