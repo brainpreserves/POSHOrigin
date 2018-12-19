@@ -16,7 +16,7 @@ process {
     $domainName = ""
     
 
-	$ws = New-WebServiceProxy -uri $options.serviceUri -UseDefaultCredential
+	$ws = New-WebServiceProxy -uri $($options.serviceUri) -UseDefaultCredential
 	$wsResult = $ws.GetSecret($secretID, $null, $null)
 
     foreach($item in $wsResult.Secret.Items)
